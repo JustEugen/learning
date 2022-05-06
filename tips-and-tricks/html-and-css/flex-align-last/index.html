@@ -1,0 +1,67 @@
+<style>
+  #solution-1-wrapper {
+      width: 800px;
+      display: flex;
+      align-items: center;
+      padding: 40px 0;
+      background: aquamarine;
+  }
+
+  #solution-1-wrapper > div {
+      background: blanchedalmond;
+  }
+
+  #solution-1-wrapper > div:not(:last-child) {
+      margin-right: 20px;
+  }
+
+  #solution-1-wrapper > div:last-child {
+      /* Ось це те, про що я говорив, цей елемент приб'ється до правого краю*/
+      margin-left: auto;
+  }
+</style>
+
+<h2>Приклад 1</h2>
+<div id="solution-1-wrapper">
+  <div>item 1</div>
+  <div>item 2</div>
+  <div>item 3</div>
+  <div>item 4</div>
+  <div>item 5</div>
+  <div>item 6</div>
+</div>
+
+
+<style>
+    #solution-2-wrapper {
+        width: 300px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        background: burlywood;
+    }
+
+    #solution-2-wrapper > div {
+        background: blanchedalmond;
+    }
+
+    #solution-2-wrapper > div:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    #solution-2-wrapper > div:last-child {
+        /* Ось це те, про що я говорив, цей елемент приб'ється до нижнього краю*/
+        margin-top: auto;
+    }
+</style>
+<h2>Приклад 2</h2>
+<div id="solution-2-wrapper">
+  <div>item 1</div>
+  <div>item 2</div>
+  <div>item 3</div>
+  <div>item 4</div>
+  <div>item 5</div>
+  <div>item 6</div>
+</div>

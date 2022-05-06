@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f390edd2-48f0-49ff-a6e0-1a77c4a8d662" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tips-and-tricks/html-and-css/flex-align-last/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tips-and-tricks/html-and-css/flex-align-last/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651771900938</updated>
-      <workItem from="1651771903458" duration="8476000" />
+      <workItem from="1651771903458" duration="9127000" />
     </task>
     <servers />
   </component>
