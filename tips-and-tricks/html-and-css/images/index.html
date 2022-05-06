@@ -1,0 +1,46 @@
+<!-- Possible solution number 1 -->
+<h2>
+  Абсолютно не правильно
+</h2>
+<img src="https://thumbs.dreamstime.com/b/golden-retriever-dog-21668976.jpg" alt="Dog">
+
+
+
+<!-- Possible solution number 2 -->
+<style>
+  #rightWayWrapper {
+      width: 800px;
+      height: 533px;
+  }
+
+  #rightWayWrapper > img {
+      width: 100%;
+  }
+</style>
+<h2>Правильно</h2>
+<div id="rightWayWrapper">
+  <img src="https://thumbs.dreamstime.com/b/golden-retriever-dog-21668976.jpg" alt="Dog">
+</div>
+
+
+<!-- Possible solution number 3 -->
+<h2>В випадку, якщо тобі потрібно задати висоту, і не зламати співвідношення сторін</h2>
+<style>
+    #anotherWay {
+        width: 800px;
+        height: 200px;
+    }
+
+    #anotherWay > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        /* Якщо тобі потрібно якось позиціонувати цю картинку, використовується таке */
+        /*object-position: top;*/
+    }
+</style>
+<h2>Правильно</h2>
+<div id="anotherWay">
+  <img src="https://thumbs.dreamstime.com/b/golden-retriever-dog-21668976.jpg" alt="Dog">
+</div>
