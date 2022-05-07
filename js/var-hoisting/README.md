@@ -80,9 +80,9 @@ console.log(yopta); // undefined
 console.log(moskal); // undefined
 
 a = 'Hello, world!';
-b = 'Some text here';
+const b = 'Some text here';
 yopta = 'I need semki';
 moskal = 'Dead';
-city = 'Lviv';
+let city = 'Lviv';
 // Кінець: Те що відбувається під капотом
 ```
