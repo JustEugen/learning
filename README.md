@@ -13,7 +13,7 @@ Tips and Tricks:
   4. [Function Hoisting / Піднесення](js/function-hoisting)
   5. [Callback]()
   6. [Масиви]()
-  7. [Деструктиризація]()
+  7. [Деструктиризація](js/destructuring/README.md)
   8. [Promise and async/await]()
   9. [Prototype and Classes]()
 - DOM
