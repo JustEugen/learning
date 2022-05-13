@@ -11,5 +11,15 @@ Tips and Tricks:
   2. [var Hoisting / Піднесення](js/var-hoisting/README.md)
   3. [Function Basics / Основи Функцій](js/functions-basic/README.md)
   4. [Function Hoisting / Піднесення](js/function-hoisting)
-
+  5. [Callback]()
+  6. [Масиви]()
+  7. [Деструктиризація]()
+  8. [Promise and async/await]()
+  9. [Prototype and Classes]()
+- DOM
+  1. [Основи](dom/dom-basics/README.md)
+  2. [Робота з інпутами]()
+  3. [BOM url]()
+- React
+  1. 
 - [Git](Git.md)
