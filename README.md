@@ -21,5 +21,8 @@ Tips and Tricks:
   2. [Робота з інпутами]()
   3. [BOM url]()
 - React
-  1. 
+  1. [React основи](react/basics/README.md)
+  2. [React стейт](react/state/README.md)
+  3. [React props](react/components-and-props/README.md)
+  4. [React children](react/children/README.md)
 - [Git](Git.md)
