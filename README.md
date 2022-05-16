@@ -25,4 +25,5 @@ Tips and Tricks:
   2. [React стейт](react/state/README.md)
   3. [React props](react/components-and-props/README.md)
   4. [React children](react/children/README.md)
+  4. [React props from child to parent](react/props-from-child-to-parent/README.md)
 - [Git](Git.md)
