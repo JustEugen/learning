@@ -7,6 +7,7 @@ Tips and Tricks:
   - [Резиновий елемент, для якого потрібна стала ширина](tips-and-tricks/html-and-css/auto-resize/README.md)
   - [Як відцентрувати по горизонталі блочний елемент](tips-and-tricks/html-and-css/horizontal-centering-of-block/README.md)
 - JS
+  1. [First step](js/first-step/README.md)
   1. [Variables and Data Types](js/scope/README.md)
   2. ✅ [Scope](js/scope/README.md)
   3. [var Hoisting / Піднесення](js/var-hoisting/README.md)
