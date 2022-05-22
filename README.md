@@ -11,6 +11,7 @@ Tips and Tricks:
   2. ✅ [Variables and Data Types](js/variables-and-data-types/README.md)
   3. ✅ [Перетворення типів в інші типи](js/type-conversion/README.md)
   4. ✅ [Оператори зрівнювання](js/comparison/README.md)
+  4. [Умови](js/condition/README.md)
   5. ✅ [Scope](js/scope/README.md)
   6. [var Hoisting / Піднесення](js/var-hoisting/README.md)
   7. [Function Basics / Основи Функцій](js/functions-basic/README.md)
