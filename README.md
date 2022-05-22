@@ -8,8 +8,8 @@ Tips and Tricks:
   - [Як відцентрувати по горизонталі блочний елемент](tips-and-tricks/html-and-css/horizontal-centering-of-block/README.md)
 - JS
   1. ✅ [First step](js/first-step/README.md)
-  1. [Variables and Data Types](js/scope/README.md)
-  2. ✅ [Scope](js/scope/README.md)
+  1. ✅ [Variables and Data Types](js/variables-and-data-types/README.md)
+  2. ✅ [Scope](js/variables-and-data-types/README.md)
   3. [var Hoisting / Піднесення](js/var-hoisting/README.md)
   4. [Function Basics / Основи Функцій](js/functions-basic/README.md)
   5. [Function Hoisting / Піднесення](js/function-hoisting/README.md)
