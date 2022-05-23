@@ -33,6 +33,10 @@ console.log(Boolean("")); // false
 console.log(Boolean("0")); // true
 // А тут просто пробіл, що також не рахується пустою строкою, пробіл тоже ж значення
 console.log(Boolean(" ")); // false
+
+// Потрібно запам'ятати що null та undefined завжди будуть перетворюватися false
+console.log(Boolean(null)) // false
+console.log(Boolean(undefined)) // false
 ```
 
 ### Перетворення в `number`
