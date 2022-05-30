@@ -15,16 +15,23 @@ Tips and Tricks:
   6. ✅ [Логічні оператори](js/logical-operators/README.md)
   7. ✅ [Цикли](js/loop/README.md)
   8. ✅ [Основи об'єктів](js/objects-basic/README.md)
-  9. ✅ [Основи Функцій](js/functions-basic/README.md)
-  10. [Function Expression vs Function Declaration](js/function-expression-vs-function-declaration/README.md)
-  11. ✅ [Scope](js/scope/README.md)
-  12. [Function Hoisting / Піднесення](js/function-hoisting/README.md)
-  13. [Callback](js/callback/README.md)
-  14. [Масиви]()
-  15. [var Hoisting / Піднесення](js/var-hoisting/README.md)
-  16. [Деструктиризація](js/destructuring/README.md)
-  17. [Promise and async/await]()
-  18. [Prototype and Classes]()
+  9. [Основи масивів](js/array-basic/README.md)
+  10. s
+  11. s
+  12. s
+  13. s
+  14. s
+  15. s
+  16. s
+  17. [Основи Функцій](js/functions-basic/README.md)
+  18. [Function Expression vs Function Declaration](js/function-expression-vs-function-declaration/README.md)
+  19. ✅ [Scope](js/scope/README.md)
+  20. [Function Hoisting / Піднесення](js/function-hoisting/README.md)
+  21. [Callback](js/callback/README.md)
+  22. [var Hoisting / Піднесення](js/var-hoisting/README.md)
+  23. [Деструктиризація](js/destructuring/README.md)
+  24. [Promise and async/await]()
+  25. [Prototype and Classes]()
 - DOM
   1. [Основи](dom/dom-basics/README.md)
   2. [Робота з інпутами]()
