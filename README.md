@@ -16,7 +16,7 @@ Tips and Tricks:
   7. ✅ [Цикли](js/loop/README.md)
   8. ✅ [Основи об'єктів](js/objects-basic/README.md)
   9. ✅ [Основи Функцій](js/functions-basic/README.md)
-  10. [Основи масивів](js/array-basic/README.md)
+  10. ✅ [Основи масивів](js/array-basic/README.md)
   11. [Function Expression vs Function Declaration](js/function-expression-vs-function-declaration/README.md)
   12. ✅ [Scope](js/scope/README.md)
   13. [Function Hoisting / Піднесення](js/function-hoisting/README.md)
