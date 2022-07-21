@@ -7,3 +7,4 @@
 - [Math operators / Математичні оператори](./math-operators.md)
 - [Conditional branching / Умови](./conditional-branching.md)
 - [Loops / Цикли](./loops.md)
+- [Functions / Функції](./functions.md)
