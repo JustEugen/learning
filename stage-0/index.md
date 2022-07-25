@@ -11,3 +11,5 @@
 - [Functions / Функції](./functions.md)
 - [Objects / Об'єкти](./objects.md)
 - [Arrays / Масиви](./arrays.md)
+- [Callback functions / Функції зворотнього виклику](./callback.md)
+- 
