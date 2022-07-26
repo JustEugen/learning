@@ -12,4 +12,4 @@
 - [Objects / Об'єкти](./objects.md)
 - [Arrays / Масиви](./arrays.md)
 - [Callback functions / Функції зворотнього виклику](./callback.md)
-- 
+- [Array methods / Методи масиву](./array-methods.md)
