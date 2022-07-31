@@ -394,3 +394,104 @@ const user = new User('John', 'Carter', 20);
 
 В посиланні ниже невелика презентація, яка описує всі ці кроки з картинками
 https://docs.google.com/presentation/d/1_K93mw69b9iJBk5oBZFXGtWfABOz8liRIpa7u3oW6wU/edit?usp=sharing
+
+## Прототипи
+Для того, щоб не гортати постійно вверх я продублюю нашу функцію конструктор `User`.
+```js
+function User(firstName, lastName, age) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+  
+  this.getFullNameWithAge = function() {
+    return this.firstName + ' ' + this.lastName + ' age: ' + this.age
+  }
+}
+
+const user1 = new User('John', 'Carter', 20);
+const user2 = new User('Caren', 'Moon', 10);
+
+console.log(user1.getFullNameWithAge()); // "John Carter age: 20"
+console.log(user2.getFullNameWithAge()); // "Caren Moon age: 10"
+```
+
+Є одна проблема, що в прикладі з функцією конструктором `User`, що і з просто функцією `createUser` яка повертає простий об'єкт, надалі ми будемо говорити тільки про функцію конструктор `User`
+
+Кожен наш об'єкт, який ми створюємо використовуючи `User`, тобто `user1` та `user2` будуть мати метод `getFullNameWithAge`, і на це буде витрачатися додаткова кількість пам'яті, але питання, чи дійсно нам треба мати в кожному об'єкті цей метод, якщо вони роблять одну й ту саму роботу?
+
+Як ти можеш бачити метод `getFullNameWithAge` повертає тільки ті данні, які належать до свого об'єкта, тобто `this` в `user1` посилається на `user1`, а `this` в `user2` посилається на `user2`.
+
+Було б круто, щоб в нас існував тільки один екземпляр цього метода, який би використовував `this` того об'єкта, на якому цей метод викликається, тим самим ми б економили пам'ять, і не дублювали метод в кожному об'єкті, томущо зараз в нас тільки один метод, а може бути таке, що наш юзер має з десяток різних методів, з купою коду і рахуй ми на пустому місці будемо використовувати більше пам'яті чим потрібно.
+
+Якраз для розв'язання проблем такого типу, були придумані прототипи. Прототип - це по суті коробка, яка зберігає методи і властивості, які є спільні для всіх екземплярів функції конструктора. Якщо говорити про наш приклад зверху, то `user1` та `user2` будуть мати спільний прототип. 
+
+Тепер будемо зберігати нашу функцію `getFullNameWithAge` в середині прототипа 
+
+```js
+function User(firstName, lastName, age) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+}
+
+User.prototype.getFullNameWithAge = function() {
+  return this.firstName + ' ' + this.lastName + ' age: ' + this.age
+}
+
+const user1 = new User('John', 'Carter', 20);
+const user2 = new User('Caren', 'Moon', 10);
+
+console.log(user1.getFullNameWithAge()); // "John Carter age: 20"
+console.log(user2.getFullNameWithAge()); // "Caren Moon age: 10"
+```
+
+Якщо запустити код, то ти побачиш, що наш код виконується без проблем, і повертає те ж саме, що і раніше.
+
+Прототип - це по суті об'єкт, тому щоб додати туди нову властивість чи метод, ми робимо це таким самим чином як і зі звичайними об'єктами. Ми пишемо `User`, в кожної функції є об'єкт `prototype`, доступаємося до нього `User.prototype` і далі додаємо нову властивість чи метод, як при роботі з звичайними об'єктами. `User.prototype.getFullNameWithAge = function() {...}`.
+
+Тепер дивись дивину, якщо вивести в консоль `user1` та `user2` ти можеш побачити, що в них не має метода `getFullNameWithAge`
+<img src="./assets/this09.png">
+
+А ще ти можеш побачити властивість `[[Prototype]]`
+<img src="./assets/this10.png">
+Як ти можеш бачити, в середині прототипа в нас є цей метод `getFullNameWithAge`, який ми самі туди ж і додали.
+
+Тепер питання, якщо в нас в об'єкті не має метода `getFullNameWithAge`, то як тоді ми можемо його викликати `user1.getFullNameWithAge()`? Відповідь насправді дуже проста, коли ти звертаєшся до властивості чи метода, Javascript спочатку буде шукати його в середині об'єкта, і якщо його не знайде, тоді почне шукати в середині прототипа. Так відбувається і в нас, в наших об'єктів не має метода `getFullNameWithAge`, тому Javascript почне ритися в прототипі, знайде його і викличе його з потрібним значення `this`. 
+
+Ще раз хочу наголосити, що хоч і прототип в нас спільний, `this` в середині функцій які ми викликаємо буде залежати від того, на якому об'єкті ми викликаємо функцію
+
+```js
+console.log(user1.getFullNameWithAge()); // "John Carter age: 20"
+console.log(user2.getFullNameWithAge()); // "Caren Moon age: 10"
+```
+
+Як можеш бачити, повертаються ті данні, які відносяться до об'єкта на якому викликається метод.
+
+## Закріплення прототипів
+```js
+function User(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+User.prototype.sayHello = function() {
+  return 'Hello ' + this.name;
+}
+
+User.prototype.canBuyAlcho = function() {
+  if (this.age < 18) {
+    return false;
+  } else {
+    return true
+  }
+}
+
+const user1 = new User('John', 10);
+
+console.log(user1.sayHello()); // "Hello John"
+console.log(user1.canBuyAlcho()); // false
+```
+Просто ще один приклад, просто з декількома методами
+
+## Підсумки
+Тема важка і не зрозуміла, але це напевно найважча частина Javascript яку ми розбираємо в скоупі `stage 0`
