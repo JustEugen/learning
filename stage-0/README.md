@@ -14,4 +14,4 @@
 - [Callback functions / Функції зворотнього виклику](./callback.md)
 - [Array methods / Методи масиву](./array-methods.md)
 - [This](./this.md)
-- [Prototype and Classes / Прототипи і Класи](./this.md)
+- [Classes / Класи](./classes.md)
