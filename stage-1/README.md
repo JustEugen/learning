@@ -11,3 +11,5 @@
 ### Теми
 - [Вступ](./intro.md)
 - [Вступ до React](./react-intro.md)
+- [Налаштування React проєкта](./react-project-setup.md)
+- [Компоненти в React](./react-components.md)
