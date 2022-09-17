@@ -13,3 +13,8 @@
 - [Вступ до React](./react-intro.md)
 - [Налаштування React проєкта](./react-project-setup.md)
 - [Компоненти в React](./react-components.md)
+- [Практикуємося з React компонентами](./react-component-practice.md)
+- [Стилі в React](./react-styles.md)
+- [Практикуємося зі Стилями в React](./react-styles.practice.md)
+- [React props](./react-props.md)
+- [Виведення масивів](./react-array.md)
