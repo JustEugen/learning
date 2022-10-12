@@ -6,3 +6,4 @@
 
 ### Теми
 - [Як працює рендер в React](./react-render.md)
+- [Стан або State компоненти](./react-state.md)
